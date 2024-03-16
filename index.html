@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Fusion Factory</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Baloo Bhai"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /*RESET CS */
+    body{
+      font-family: "baloo bhai", cursive;
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      background: url("gym.jpg");
+      background-repeat: no-repeat;
+    }
+    .left {
+      /* border: 2px solid red; */
+      display: inline-block;
+      position: absolute;
+      left: 50px;
+      top: 20px;
+    }
+    .left img {
+      padding: 15px;
+      width: 190px;
+      height: 160px;
+    }
+    .left div {
+      text-align: center;
+      line-height: 0;
+      font-size: 22px;
+    }
+    .center {
+      /* border: 2px solid green; */
+      display: block;
+      width: 40%;
+      margin: 12px auto;
+      top: 20px;
+    }
+    .right {
+      /* border: 2px solid yellow; */
+      position: absolute;
+      display: inline-block;
+      right: 30px;
+      top: 20px;
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+      font-size: 22px;
+    }
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 25px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: grey;
+    }
+    .btn {
+      font-family: "baloo bhai";
+      display: inline-block;
+      color: white;
+      background-color: black;
+      font-size: 22px;
+      padding: 3px 4px;
+      /* border: 2px solid grey; */
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      text-decoration: underline;
+      color: rgb(72, 58, 58);
+    }
+    .container{
+        /* border:2px solid white; */
+        width: 60%;
+        margin: 175px 300px;
+        padding: 75px 75px;
+        border-radius: 10px;
+    }
+    .form-group input{
+        text-align: center;
+        font-family: 'baloo bhai',cursive;
+        display: block;
+        width: 300px;
+        pading: 6px;
+        border-color: solid black;
+        margin: 10px auto;
+        border-radius: 10px;
+        font-size: 25px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 300px;
+        margin: 30px auto;
+        
+    }
+  </style>
+  <body>
+    <header class="header">
+      <!-- left box for logo -->
+      <div class="left">
+        <img src="logo.jpeg" alt="" />
+        <div>Fitness Fusion Factory</div>
+      </div>
+      <!-- center box for navgation bar -->
+      <div class="center">
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Contact US</a></li>
+        </ul>
+      </div>
+      <!-- right bix for buttons-->
+      <div class="right">
+        <button class="btn">Location</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </div>
+    </header>
+    <div class="container">
+        <h1>Join Us Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Contact">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Mail ID">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+  </body>
+</html>
